@@ -37,8 +37,14 @@ remove  | 削除
 ## 設定を確認する
     git remote -v  
     
-## プッシュして、ローカルリポジトリ「master」をリモートリポジトリ「master」に反映
+## プッシュして、ローカルリポジトリをリモートリポジトリ「master」に反映
     git push origin master  
+  
+  
+リモートリポジトリを後に作成すると、リモートとローカルが関連のない別々のものとなるため、  
+マージがデフォルトでエラーとなる。  
+その場合、`--allow-unrelated-histories`オプションを指定する。  
+    git merge --allow-unrelated-histories master  
 
 ## 変更など、現在の状態を確認する
     git status  
