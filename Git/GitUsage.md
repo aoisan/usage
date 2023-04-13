@@ -41,8 +41,10 @@ remove  | 削除
     git push origin master  
     
 ### 注意
- リモートリポジトリを後に作成すると、リモートとローカルが関連のない別々のものとなるため、マージがデフォルトでエラーとなる。  
- その場合、`--allow-unrelated-histories`オプションを指定する。  
+リモートリポジトリを後に作成すると、リモートとローカルが関連のない別々のものとなるため、マージがデフォルトでエラーとなる。  
+ 
+その場合、初回に`--allow-unrelated-histories`オプションを指定する。  
+
     git merge --allow-unrelated-histories master  
 
 ## 変更など、現在の状態を確認する
