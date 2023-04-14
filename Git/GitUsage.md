@@ -73,6 +73,7 @@ remove  | 削除
 
 ## フェッチして、リモートリポジトリが変更されていないか確認する
 まだローカルには反映されない。
+
     git fetch https://github.com/aoisan/hello-world.git
 
 
@@ -90,6 +91,7 @@ git merge develop
 ```
 
 ## プッシュして、ローカル「master」の変更をリモートリポジトリに反映する
+```
     git push origin master
 
 ## 不必要なブランチを削除する
