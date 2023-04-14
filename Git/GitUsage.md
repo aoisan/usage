@@ -12,7 +12,7 @@ Gitの使い方
     git rm ファイル
 
 ## 変更など、現在の状態を確認する
-    git status 
+    git status
 
 ## 管理するファイルを追加する
     git commit -m "[Prefix]コメント"
@@ -58,8 +58,8 @@ remove  | 削除
     git branch
 
 ## 開発用ブランチを作成する
-    git branch develop  
-    
+    git branch develop
+
 ## 開発用ブランチへ移動する
     git checkout develop
 
@@ -72,7 +72,7 @@ remove  | 削除
     git remote -v
 
 ## フェッチして、リモートリポジトリが変更されていないか確認する
-#### まだローカルには反映されない。
+まだローカルには反映されない。
     git fetch https://github.com/aoisan/hello-world.git
 
 
@@ -80,16 +80,19 @@ remove  | 削除
     git pull origin master
 
 ## ローカル内の開発用ブランチをメインブランチへマージする
-#### まず、メインへ移動
-    git checkout master
-
-#### メインへ移動後、開発用ブランチをメインへマージ   
-    git merge develop
+1. まず、メインへ移動
+```
+git checkout master
+```
+2. メインへ移動後、開発用ブランチをメインへマージ
+```
+git merge develop
+```
 
 ## プッシュして、ローカル「master」の変更をリモートリポジトリに反映する
-    git push origin master 
+    git push origin master
 
 ## 不必要なブランチを削除する
-    git branch -d develop 
+    git branch -d develop
 
 
